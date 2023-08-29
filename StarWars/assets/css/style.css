@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Montserrat:wght@300;400;600&family=Poppins:wght@300&display=swap');
+
+body{
+    background-image: url(/assets/midias/MicrosoftTeams-image.png);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    overflow: hidden;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 50% 0 0 0;
+    position: relative;
+}
+
+body::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(20,20,20,1) 40%, rgba(20,20,20,0)100%);
+}
+
+.wrapper{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    perspective: 450px;
+}   
+
+.text-scroll{
+    color: #ffc909;
+    font-size: 3vw;
+    font-size: 4vh;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: absolute;
+    animation: scroll 60s linear forwards;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+@keyframes scroll {
+    from{top: 0; transform: translateZ(0) rotateX(20deg);}
+    to{top: -7500px; transform: translateZ(-2500px) rotateX(21deg);}
+}

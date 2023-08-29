@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(255, 135, 145);
+}
+
+.s-m{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.s-m a{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: #ffd;
+    color: rgb(0, 0, 0);
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.s-m a:hover{
+    background: rgb(138, 189, 182);
+}
+
+s-m a i{
+    transition: 00.4s all;
+}
+
+.s-m a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+}

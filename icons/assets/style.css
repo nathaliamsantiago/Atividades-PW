@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 25px;
+    background: #000000;
+}
+
+.box{
+    width: 65px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position:relative;
+    right: 200px;
+    overflow:hidden;
+    cursor:pointer;
+    transition: all .4s ease;
+}
+
+.box:hover{
+    width: 200px;
+    background: #ee2de4;
+    border-radius: 35px;
+    color: #000000;
+    box-shadow: 0 0 50px #000000;
+}
+
+.box:nth-child(2):hover{
+    background: #3adf2b;
+    box-shadow: 0 0 50px #000000;
+}
+
+.box:nth-child(3):hover{
+    background: #1d33fd;
+    box-shadow: 0 0 50px #000000;
+}
+
+.box:nth-child(4):hover{
+    background: #0cb5f8;
+    box-shadow: 0 0 50px #000000;
+}
+
+.navbar p{
+    transform: translate(60px);
+}
+
+.box .icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transform: all .4s ease;
+}
+
+.instagram{
+    background-color: #ee2de4;
+}
+
+.whatsapp{
+    background-color: #3adf2b;
+}
+
+.facebook{
+    background-color: #1d33fd;
+}
+
+.twitter{
+    background-color: #0cb5f8;
+}
+
+.box:hover .icon{
+    background: #8a8383;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
+}

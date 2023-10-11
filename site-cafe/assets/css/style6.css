@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,400&family=Bricolage+Grotesque&family=Cabin&family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Quicksand&family=Raleway:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,400&family=Bricolage+Grotesque&family=Cabin&family=Inria+Serif:ital@1&family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Quicksand&family=Raleway:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bitter:ital,wght@0,300;1,400&family=Bricolage+Grotesque&family=Cabin&family=Inria+Serif:ital@1&family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Quicksand&family=Raleway:ital,wght@0,200;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0daae;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 180px 50px;
+}
+
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #ffff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.container .card:hover{
+    height: 400px;
+}
+
+.container .card .imgBx{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #ccb78d;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .content{
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .content h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var();
+}
+
+.container .card .content p{
+    color: #333;
+}
+
+.container .card .content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: var();
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav{
+    position: fixed;
+    top: -32px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #fff;
+}
+
+.logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    flex-direction: column;
+}
+
+.logo ul, .logo li{
+    margin: 0;
+    padding: 0;
+}
+
+.logo li, .submenu{
+    margin: 0 ;
+    display: block;
+}
+
+.logo a{
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    display: block;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a{
+    line-height: 50px;
+    margin-left: -17px;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: rgba(137, 93, 43, 0.2);
+    border-radius: 6px;
+    color: #ffffff;
+    line-height: 46px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+.submenu{
+    left: 440px;
+    opacity: 0;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul.submenu{
+    opacity: 1;
+    visibility: visible;
+    left: auto;
+}
+
+.submenu li{
+    float: none;
+    width: 100%;
+}
+
+.submenu a:hover{
+    background: #d6a791;
+}
+
+.submenu a{
+    background-color: #7c7364;
+}
+
+h1{
+    font-family: 'Allura', sans-serif;
+}
+
+p{
+    font-size: 21px;
+}
+
+.texto {
+    position: absolute; 
+    font-size: 25px;
+    font-family: 'Allura';
+    top: 10%; 
+    left: 35%; 
+    padding: 40px;
+}
